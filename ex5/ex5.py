@@ -15,7 +15,7 @@ argv = parser.parse_args()
 def print_file(file_name):
     with open(file_name) as f:
         for line in f:
-            print(line)
+            print(line, end='')
 
 def cat_file(file_list, output_file):
     with open(output_file, 'a') as out_f:
